@@ -1,0 +1,66 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 大枠 */
+body {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-left: 10%;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  color: black;
+
+  border-bottom: 1px solid black;
+
+  width: 80%;
+
+}
+
+.end_buf {
+  margin-top: 20px;
+  border-bottom: none;
+  border-top: 1px solid black;
+
+  text-align: right;
+}
+
+.canvas_zone {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 480px;
+  height: 320px;
+}
+
+#gameCanvas {
+  margin: 0 auto;
+  display: block;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* CSSからcanvasは適用できない。背景色とかくらい */
+.myCanvas { 
+  /*
+  width: 480px;
+  height: 320px;
+  */
+
+  background: #eee; 
+  display: block; 
+  margin: 0 auto; 
+  
+}

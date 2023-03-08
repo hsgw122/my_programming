@@ -1,0 +1,253 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 大枠 */
+body {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+  min-width: 500px;
+  max-width: 700px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 10px;
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  /*margin-left: 10%;
+  margin-bottom: 20px;*/
+
+  /*
+  margin-left: auto;
+  margin-right: auto;*/
+  text-align: center;
+
+  font-size: 25px;
+  color: black;
+
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(143, 143, 143);
+
+  /*width: 80%;*/
+
+}
+
+h2 {
+  /*margin-left: 10%;
+  margin-bottom: 20px;*/
+
+  /*margin-left: 10%;*/
+  text-align: left;
+
+  font-size: 20px;
+  color: black;
+
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(143, 143, 143);
+
+  /*width: 70%;*/
+
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 80%;*/
+
+  font-size: 18px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*
+span {
+  font-weight: bolder;
+
+  margin-left: 5px;
+  margin-right: 5px;
+}*/
+
+.img_fullPack {
+  padding: 10px;
+  margin: 10px;
+
+  border-width: 1px;
+  border-style: solid;
+}
+
+.img_top_under_Pack {
+  padding-top: 10px;
+  margin-top: 10px;
+
+  border-top-style: solid;
+  border-top-width: 1px;
+
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.img_listing {
+  width: 40%;
+
+}
+
+.li_raretu {
+  margin-top: 10px;
+}
+
+.font_heavy {
+  font-weight: bolder;
+  /*font-size: larger;*/
+
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.font_green {
+  color: green;
+}
+
+.font_blue {
+  color: blue;
+}
+
+.font_red {
+  color: red;
+}
+
+.move_back {
+  margin-top: 100px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.draw_circle {
+  position: absolute;
+
+  border-color: rgba(255, 51, 51, 0.8);
+  width: 20%;
+  height: 27%;
+  border-radius: 100%;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+.circle_left {
+  left: 47.5%;
+
+}
+
+.circle_right {
+  left: 69%;
+}
+
+.circle_top {
+  top: 35%;
+  
+}
+
+.circle_bottom {
+  top: 62%;
+
+}
+
+
+/* ここまでコピーゾーン */
+
+.end_buf {
+  margin-top: 20px;
+  border-bottom: none;
+
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: rgb(212, 212, 212);
+
+  text-align: right;
+}
+
+.canvas_zone {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 480px;
+  height: 320px;
+}
+
+#gameCanvas {
+  margin: 0 auto;
+  display: block;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.space {
+  position: relative;
+
+  width: 800px;
+  height: 500px;
+
+  display: block;
+  margin: 0 auto;
+
+}
+
+#myCanvasTop {
+  left: 0;
+}
+
+#myCanvasBottom {
+  right: 0;
+}
+
+/* CSSからcanvasは適用できない。背景色とかくらい */
+.myCanvas { 
+  /*
+  width: 480px;
+  height: 320px;
+  */
+  /*
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;*/
+  
+  /*display: block;*/
+  /*margin: 0 auto;*/
+
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+
+  
+}
+
+.hiyori {
+
+  left: -120px;
+  top: 80px;
+
+  position: absolute;
+
+  width: 60%;
+  height: 60%;
+}

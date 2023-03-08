@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Matrix Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <!-- ヘッダーはここに記述 -->
+  </header>
+  <h1> 2x2 matrix game</h1>
+  <div id="wrapper">
+    <section>
+      <h2>ゲームの概要</h2>
+      <p>game matrixは、以下の通り。以下の内容で、相手の戦略を予測し、ゲームを行う。</p>
+
+    </section>
+  <!-- /#wrapper --></div>
+
+  <!-- げーむ欄 -->
+  <div id="wrapper">
+    <div id="type">game type</div>
+    <div class="field">
+      <div class="top">
+        <div class="chara_image"></div>
+        <div class="game">
+          <div class="cd">
+            <div class="C_en">C</div>
+            <div class="D_en">D</div>
+          </div>
+          <div class="choice">
+            <div class="matrix">
+              <div class="MT_source">
+                <div id="CC_self" class="player">2</div>
+                <div id="CC_other" class="enemy">2</div>
+              </div>
+              <div class="MT_source">
+                <div id="CD_self" class="player">4</div>
+                <div id="CD_other" class="enemy">3</div>
+              </div>
+              <div class="MT_source">
+                <div id="DC_self" class="player">3</div>
+                <div id="DC_other" class="enemy">4</div>
+              </div>
+              <div class="MT_source">
+                <div id="DD_self" class="player">1</div>
+                <div id="DD_other" class="enemy">1</div>
+              </div>
+            </div>
+            <div class="button_zone">
+              <button class="C_button" onclick="click_button_C()">C</button>
+              <button class="D_button" onclick="click_button_D()">D</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="bottom">
+        <div class="RPE">
+          <div class="tab">ROUND</div>
+          <div class="tab">PLAYER</div>
+          <div class="tab">ENEMY</div>
+        </div>
+        <table id="table_RPE" class="table_RPE">
+          <tr class="round">
+            <th></th>
+          </tr>
+          <tr class="ch">
+            <td></td>
+          </tr>
+          <tr class="ch">
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    -->
+    </div>
+  </div>
+
+  <div id="wrapper">
+    end.
+  </div>
+
+  <footer>
+    <!-- フッターはここに記述 -->
+  </footer>
+
+</body>
+</html>

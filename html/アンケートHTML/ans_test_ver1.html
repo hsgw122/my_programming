@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>アンケートテスト</title>
+
+    <link rel="stylesheet" href="css/style.css" x-content-type-options="nosniff">
+
+    <script type="text/javascript" src="js/script.js" x-content-type-options="nosniff"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- ヘッダーはここに記述 -->
+
+    </header>
+</body>
+
+<div>
+    <h1>研究に参加していただき、ありがとうございます</h1>
+
+    <p>
+        あなたには<span class="font_heavy">「意思決定ゲーム」</span>に参加していただきます。
+    </p>
+
+    <p>
+        この研究の目的は、人が相手の行動に対しどのように意思決定するかを調査することです。
+    </p>
+
+    <p>
+        この調査は匿名で行われます。
+        <span class="font_heavy">所要時間は30分</span>程度です。
+    </p>
+
+    <p class="move_back">
+        右下に表示されている「矢印ボタン」を押して、次の画面へ移動してください。
+    </p>
+
+</div>
+<br><br>
+
+<div>
+    <h1>事前質問</h1>
+    <p class="centered">
+        <span class="font_heavy">あなたの個人的なこと</span>について、以下の質問にお答えください。
+    </p>
+    <p>
+        QUAL　年齢<br>
+        QUAL　性別<br>
+    </p>
+</div>
+<br><br>
+
+<!--
+<div>
+    <h1>事前質問</h1>
+    <p>
+        あなたが、とある相手と資源の配分を決めるという場面に直面したとします。
+        手元にあるお金を、相手とどのように分けるか、などを想像してください。
+
+    </p>
+    <p>
+        以下の図のようなスライダーバーは、スライダーを動かすことで、
+        あなたと相手の配分を決定します。その中で、あなたが最も望んでいる配分を
+        選んでください。6本のスライダーバーがあり、それぞれで1つの点しか選ぶことが
+        できません。
+    </p>
+    <p>
+        スライダーバーで表示されている2つの数値は、
+        あなたと相手に配分される量を示しています。下の図のように決定したときは、
+        あなたが50、相手が40を受け取るような配分です。お金の例で考えると、
+        あなたに50円、相手に40円が配分されます。
+    </p>
+
+    <br>
+    スライダーバーの例の画像
+    <br>
+
+    <p>
+        また、あなたと相手の配分の合計は、組み合わせによって異なる場合があります。
+        上の図の場合、左端では、あなたは30、相手は80で、30+80＝110ですが、
+        右端では、あなたは70、相手は0で、70+0＝70になっています。
+    </p>
+    <br>
+
+    <p>
+        6本のすべてのスライダーバーにおいて、配分をあなたの望む通りに決定してください。
+        正しい答えや、間違った答えはありません。自分好みに決定してください。
+    </p>
+
+    <br>
+    スライダーバー
+    <br>
+
+    <p>
+        もし、右下の矢印をクリックしても、次のページに移動しない場合には、
+        これまでのすべての質問に回答したか、もう一度ご確認ください。
+    </p>
+
+    <br>
+</div>
+<br><br>
+-->
+
+<div>
+    <h1>タスクの説明</h1>
+    <p>
+        あなたには、これから2人で行う<span class="font_heavy">「投資ゲーム」</span>に参加していただきます。
+    </p>
+
+    <p>
+        この投資ゲームでは、あなたと相手がそれぞれ<span class="font_green font_heavy">「緑プロジェクト」</span>と<span class="font_blue font_heavy">「青プロジェクト」</span>の2つのプロジェクトのうち、
+        <span class="font_heavy">いずれか1つ</span>に投資するかを決めます。
+        しかし、投資の結果、あなたのもらえる<span class="font_heavy">収益（ポイント）</span>がいくらになるかは、
+        <span class="font_heavy">相手がどちらのプロジェクトに投資するか</span>によって決まります。
+    </p>
+
+    <p>
+        つまり、あなたと相手の投資の選び方は、以下の表のように、全部で<span class="font_heavy">4通り</span>になります。
+    </p>
+
+    <div style="text-align: center;">
+        <img class="img_top_under_Pack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+    </div>
+
+    <ul>
+    <li class="li_raretu">
+        あなたと相手がともに<span class="font_green font_heavy">「緑プロジェクト」</span>を選んだ場合は、
+        表の左上に示される結果となります。
+        この場合、<span class="font_heavy">2人とも</span><span class="font_heavy">5ポイント</span>を獲得します。
+    </li>
+
+    <li class="li_raretu">
+        しかし、あなただけが<span class="font_green font_heavy">「緑プロジェクト」</span>を選び、
+        相手が<span class="font_blue font_heavy">「青プロジェクト」</span>を選んだ場合は、
+        表の左下に示される結果となります。
+        この場合、あなたは<span class="font_heavy">7ポイント</span>を獲得し、
+        相手は<span class="font_heavy">2ポイント</span>を獲得します。
+    </li>
+
+    <li class="li_raretu">
+        一方で、あなただけが<span class="font_blue font_heavy">「青プロジェクト」</span>を選び、相手が
+        <span class="font_green font_heavy">「緑プロジェクト」</span>を選んだ場合は、
+        表の右上に示される結果となります。
+        この場合、あなたは<span class="font_heavy">2ポイント</span>を獲得し、
+        相手は<span class="font_heavy">7ポイント</span>を獲得します。
+    </li>
+
+    <li class="li_raretu">
+        また、あなたと相手がともに<span class="font_blue font_heavy">「青プロジェクト」</span>を選んだ場合は、
+        表の右下に示される結果となります。
+        この場合、<span class="font_heavy">2人とも</span><span class="font_heavy">4ポイント</span>を獲得します。
+    </li>
+    </ul>
+
+    <br>
+
+    <p>
+        この研究では、2人のプレイヤーが、<span class="font_heavy">何度もこのゲームを行う</span>状況を考えます。
+        2人のプレイヤーは、どちらに投資するかを毎回選びます。
+        しかし、会話をするなど、
+        <span class="font_heavy">相手とコミュニケーションすることはできません。</span>
+        相手が選んだプロジェクトがわかるのは、結果が公開されたときです。
+    </p>
+
+    <br>
+
+    <h2>確認問題1</h2>
+    <p class="centered">
+        下の表を見てください。
+    </p>
+
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+    </div>
+
+    <br>
+    マトリックス図
+    <br>
+
+    <p>
+        あなたが<span class="font_green font_heavy">「緑プロジェクト」</span>を選び、
+        相手も<span class="font_green font_heavy">「緑プロジェクト」</span>を選んだとします。
+    </p>
+    <p>
+        この場合、<span class="font_heavy">あなたは</span>何ポイントを獲得しますか？
+    </p>
+
+    <br>
+
+    <h2>確認問題2</h2>
+    <p class="centered">
+        下の表を見てください。
+    </p>
+
+    <div style="text-align: center;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+    </div>
+
+    <p>
+        あなたが<span class="font_blue font_heavy">「青プロジェクト」</span>を選び、
+        相手は<span class="font_green font_heavy">「緑プロジェクト」</span>を選んだとします。
+    </p>
+    <p>
+        この場合、<span class="font_heavy">相手は</span>何ポイントを獲得しますか？
+    </p>
+
+</div>
+<br><br>
+
+<div>
+    <h1>「投資ゲーム」</h1>
+    <p>
+        これまでの説明を思い出しながら、
+        <span>練習</span>として「投資ゲーム」を2回プレイしてみましょう。
+    </p>
+
+    <p>
+        準備ができたら、次のページへ進んでください。
+    </p>
+
+</div>
+<br><br>
+
+
+<div>
+    <h1>投資ゲーム　1回目（練習）</h1>
+    <p class="centered">
+        下の表を見てください。
+    </p>
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+    </div>
+    <p>
+        相手は<span class="font_heavy font_green">緑プロジェクト</span>・<span class="font_heavy font_blue">青プロジェクト</span>
+        のいずれかを選びます。
+    </p>
+
+    <p>
+        あなたは<span class="font_heavy font_green">緑プロジェクト</span>か
+        <span class="font_heavy font_blue">青プロジェクト</span>
+        のどちらを選びますか？
+    </p>
+
+
+    <div style="position: relative; text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+
+        <div class="draw_circle circle_left circle_top"></div>
+    </div>
+    <p>
+        相手は<span class="font_heavy font_green">緑プロジェクト</span>を選びました。
+        表では<span class="font_heavy">左上</span>です。
+    </p>
+    <p>
+        この場合、あなたは5ポイント獲得し、相手は5ポイント獲得します。
+    </p>
+
+
+    <div style="position: relative; text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+
+        <div class="draw_circle circle_right circle_top"></div>
+    </div>
+    <p>
+        相手は<span class="font_heavy font_green">緑プロジェクト</span>を選びました。
+        表では<span class="font_heavy">右上</span>です。
+    </p>
+    <p>
+        この場合、あなたは2ポイント獲得し、相手は7ポイント獲得します。
+    </p>
+</div>
+<br><br>
+
+
+
+<div>
+    <h1>投資ゲーム　2回目（練習）</h1>
+    <p class="centered">
+        下の表を見てください。
+    </p>
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+    </div>
+    <p>
+        相手は<span class="font_heavy font_green">緑プロジェクト</span>・<span class="font_heavy font_blue">青プロジェクト</span>
+        のいずれかを選びます。
+    </p>
+
+    <p>
+        あなたはどちらを選びますか？
+    </p>
+
+
+    <div style="position: relative; text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+
+        <div class="draw_circle circle_left circle_bottom"></div>
+    </div>
+    <p>
+        相手は<span class="font_heavy font_blue">青プロジェクト</span>を選びました。
+        表では<span class="font_heavy">左下</span>です。
+    </p>
+    <p>
+        この場合、あなたは7ポイント獲得し、相手は2ポイント獲得します。
+    </p>
+
+
+    <div style="position: relative; text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6unJ5hx8REsKGN0" width="80%" height="80%">
+
+        <div class="draw_circle circle_right circle_bottom"></div>
+    </div>
+    <p>
+        相手は<span class="font_heavy font_blue">青プロジェクト</span>を選びました。
+        表では<span class="font_heavy">右下</span>です。
+    </p>
+    <p>
+        この場合、あなたは4ポイント獲得し、相手は4ポイント獲得します。
+    </p>
+
+    <p>
+        これで、練習を終わります。次のページへ向かってください。
+    </p>
+</div>
+<br><br>
+
+
+<div>
+    <h1>様々な種類の「投資ゲーム」があります</h1>
+    <p>
+        練習では、1種類のポイント配分の投資ゲームをプレイしていただきました。
+        しかし、<span class="font_heavy">ポイントの配分によって様々な種類のゲームが考えられます。</span>
+    </p>
+    <p>
+        今回は、次の6種類のゲームを
+        合計<span class="font_heavy">15回</span>プレイしていただきます。
+    </p>
+
+    <h2 class="move_back">1回目から10回目までのゲーム:<span class="font_heavy">投資</span></h2>
+    <p>
+        1回目から10回目までは、次のような<span class="heavy_font">5種類の投資ゲーム</span>をプレイしていただきます。
+    </p>
+    <div class="centered move_back">
+        <img class="img_fullPack img_listing" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3V6ogMUcEV8vcai">
+        <img class="img_fullPack img_listing" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_0UnWlOLT7BmVneu">
+        <img class="img_fullPack img_listing" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_5bycMRzPrrx4QHc">
+        <img class="img_fullPack img_listing" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eEwZ5u0VRReiKkm">
+        <img class="img_fullPack img_listing" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3lSdyvv0ewRPlTU">
+    </div>
+
+    <p>
+        これらのゲームは、<span class="font_heavy">ポイントの配分が少し違います</span>が、次のような特徴があります。
+    </p>
+
+    <p class="move_back">
+        ・あなたと相手が<span class="font_heavy">2人とも緑プロジェクト</span>を選ぶと、
+        <span class="font_heavy">最高のポイント</span>を得ることができます。
+        しかし、相手の選択によっては、あなたが得る<span class="font_heavy">ポイントが低くなり、0ポイントになるかもしれません。</span>
+    </p>
+    <div class="centered">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_0STi5fSx9rI0lvw" width="80%" height="80%">
+    </div>
+
+    <p class="move_back">
+        ・あなたが<span class="font_heavy">青プロジェクト</span>を選ぶと、
+        相手がどちらのプロジェクトを選んでも、<span class="font_heavy">確実にポイントを得ることができます。</span>
+        しかし、そのときに得られるポイントは<span class="font_heavy">低い</span>です。
+    </p>
+    <div class="centered">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_bfJGK8GOjhj95TE" width="80%" height="80%">
+    </div>
+
+
+    <p class="move_back">
+        あなたがこのゲームで高いポイントを得るには、<span class="font_heavy">相手がどちらを選ぶのか</span>を選ぶのか
+        考える必要があります。
+    </p>
+
+    <p class="move_back">
+        <span class="font_heavy">相手が緑プロジェクトを選ぶ</span>と予想するなら、
+        <span class="font_heavy">緑プロジェクトを選びましょう。</span>
+    </p>
+    <p>
+        そうすれば、あなたも相手も<span class="font_heavy">高いポイント</span>を
+        得ることができます。しかし、緑プロジェクトを選ぶと、相手が青プロジェクトを選んだ際に、
+        あなたのポイントが<span class="font_heavy">低くなってしまうリスクがあります。</span>
+    </p>
+
+    <p class="move_back">
+        <span class="font_heavy">相手が青プロジェクトを選ぶ</span>と予想するなら、
+        <span class="font_heavy">青プロジェクトを選びましょう。</span>
+    </p>
+    <p>
+        そうすれば、相手の選び方に関係なく、<span class="font_heavy">確実にポイントを得ることができます。</span>
+    </p>
+
+
+
+    <h2 class="move_back">11回目から15回目までのゲーム:囚人のジレンマゲーム</h2>
+    <p>
+        11回目から15回目までは、これまでの投資ゲームによく似た<span class="font_heavy">囚人のジレンマゲーム</span>を
+        プレイしていただきます。
+    </p>
+
+    <div class="centered move_back">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3W1JGDZoN0Mw0IK" width="80%" height="80%">
+    </div>
+
+    <p>
+        上の表の場合、緑プロジェクトが「協力」で、青プロジェクトが「裏切る」です。
+    </p>
+
+    <p>
+        囚人のジレンマゲームには、次のような特徴があります。
+    </p>
+
+    <p class="move_back">
+        ・あなたと相手が、<span class="font_heavy">2人とも協力する</span>と、
+        <span class="font_heavy">高いポイント</span>を得ることができます。
+        しかし、相手が裏切ると、<span class="font_heavy">あなたはポイントを得られません。</span>
+    </p>
+    <div class="centered">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_dd4YuYAWxLargns" width="80%" height="80%">
+    </div>
+
+    <p class="move_back">
+        ・あなたが、<span class="font_heavy">裏切る</span>と、
+        相手がどちらを選んでも<span class="font_heavy">確実にポイントを得ることができます。</span>
+        また、相手が協力した場合には、あなたは<span class="font_heavy">最高のポイントを得ることができます。</span>
+    </p>
+    <div class="centered">
+        <img class="img_fullPack" src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3Qaae3ihPHWMS10" width="80%" height="80%">
+    </div>
+
+
+    <p class="move_back">
+        あなたがこのゲームで高いポイントを得るには、投資ゲームと同じように<span class="font_heavy">相手がどちらを選ぶのか</span>を選ぶのか
+        考える必要があります。
+    </p>
+
+    <p class="move_back">
+        <span class="font_heavy">相手が協力する</span>と予想するなら、
+        <span class="font_heavy">あなたも協力しましょう。</span>
+    </p>
+    <p>
+        そうすれば、あなたも相手も<span class="font_heavy">高いポイント</span>を得ることができます。
+        しかし、協力すると、<span class="font_heavy">相手が裏切った場合、</span>あなたのポイントが
+        <span class="font_heavy">0ポイントになってしまうリスクがあります。</span>
+    </p>
+
+    <p class="move_back">
+        <span class="font_heavy">相手が裏切る</span>と予想するなら、
+        <span class="font_heavy">あなたも裏切りましょう。</span>
+    </p>
+    <p>
+        そうすれば、相手の選び方に関係なく<span class="font_heavy">確実にポイントを得ることができます。</span>
+        また、<span class="font_heavy">相手が協力した場合、</span>
+        あなたは<span class="font_heavy">最高のポイント</span>を得ることができます。
+    </p>
+
+    <p class="move_back">
+        このほかにも様々な投資ゲームが存在します。
+    </p>
+    <p>
+        ここまでの説明が理解できたら、次へ進んでください。
+    </p>
+</div>
+<br><br>
+
+
+<div>
+    <h1>投資ゲームでは「協力する人」と「競争する人」がいます</h1>
+    <p>
+        2人で配分を決める、というような意思決定ゲームでは、
+        2人で協力しようとする人もいれば、
+        競争しようとする人もいます。
+    </p>
+
+    <p>
+        <span class="font_heavy">協力的な人</span>は、
+        社会全体の幸福・利益を追求します。
+        2人の場合には、<span class="font_heavy">2人が高い利益を得る</span>ように意思決定し、行動します。
+    </p>
+
+    <p>
+        一方で、<span class="font_heavy">競争的な人</span>は、
+        自分の幸福・利益を追求し、
+        <span class="font_heavy">自分だけが最大の利益を得られる</span>ように意思決定し、行動します。
+    </p>
+
+    <p class="move_back">
+        また、<span class="font_heavy">相手が協力的な人であっても、</span>
+        相手の選択の結果が、
+        <span class="font_heavy">あなたにとって協力的ではない場合もあります。</span>
+        間違えて選んでしまった、
+        相手がどんな行動をするかわからないとき、
+        ゲームのルールや内容を理解していないときなどがあります。
+    </p>
+    <p>
+        同様に、<span class="font_heavy">競争的な人であっても、
+        協力的な選択をする場合もあります。</span>
+        選択を間違えた、
+        その選択が他の選択より利益が出るとき、
+        ゲームを理解していないときなどがあります。
+    </p>
+
+    <h2>確認問題</h2>
+    <p>
+        説明内容の確認問題です。以下の質問にお答えください。
+    </p>
+    <p>
+        <span class="font_heavy">わからなくなった、疑問があった</span>
+        ということがあれば、
+        このページの先頭に戻って説明を確認してください。
+    </p>
+
+    <p>
+        <span class="font_heavy">「協力的な人」</span>はどのようなことを追求する人ですか？
+    </p>
+    社会全体の幸福・利益を追求する人　OR　自分の幸福・利益だけを追求する人
+
+    <p>
+        「競争的な人」は、<span class="font_heavy">常に協力的でない選択をする</span>
+    </p>
+    その通り　OR　必ずしもそうではない
+
+</div>
+<br><br>
+
+<div>
+    <h1>あなたの対戦相手は<br><span class="font_red">「AI（人工知能）」</span>を搭載した<span class="font_red">「コンピュータプレイヤー」</span>です</h1>
+
+    <p>
+        近年、自律的に人とかかわる<span class="font_heavy">AI（人工知能）</span>への興味が高まっています。
+        AIは自然に話すことができ、
+        しぐさ・表情で感情を伝えることができます。
+    </p>
+
+    <p>
+        この研究では、<span class="font_heavy">人がAIを相手にしたとき、どのような意思決定をするか</span>
+        を調べています。
+    </p>
+
+    <p>
+        これから、あなたはAIと投資ゲームを行います。
+        AIは<span class="font_heavy">「ひより」</span>という名前で、下のような顔・姿をしています。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6Vh8yCXmTdcaTf8" width="80%" height="80%">
+    </div>
+
+    <br>
+    ひよりの画像
+    <br>
+
+    <p>
+        <span class="font_heavy">ひより</span>は、
+        自分自身の意思で<span class="font_green font_heavy">「緑プロジェクト」</span>か<span class="font_blue font_heavy">「青プロジェクト」</span>を選びます。
+        また、<span class="font_heavy">ゲームの結果によって表情を変えて、その結果に対しての感情を示します。</span>
+    </p>
+
+    <h2>確認問題</h2>
+    <p>
+        理解度を確認するための質問です。以下の質問にお答えください。
+    </p>
+
+    <p>
+        あなたは、これから<span class="font_heavy">「AI」</span>とゲームをします。
+        このAIは下の画像のような顔で、名前があります。
+        <span class="font_heavy">どのような名前ですか？</span>
+    </p>
+    <div style="text-align: center;">
+        <img src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_6Vh8yCXmTdcaTf8" width="50%" height="50%">
+    </div>
+
+    <p>
+        QUAL　はやし<br>
+        QUAL　ひより<br>
+        QUAL　すずき
+    </p>
+
+
+</div>
+<br><br>
+
+<div>
+    <h1>「ひより」の性格</h1>
+
+    <p>
+        これからあなたが一緒にゲームをするAI「ひより」は、<span class="font_heavy">とある性格</span>を持っています。
+        ひよりの性格は<span class="font_heavy">ランダムに選ばれます。</span>
+        あなたに対し、協力的に接するかもしれませんし、
+        あまり協力的でないかもしれません。
+    </p>
+
+    <p>
+        また、ひよりの性格は一貫しています。
+        <span class="font_heavy">あなたの選択によって、ひよりの性格が変わることはありません。</span>
+    </p>
+
+
+    <h2 class="move_back">ゲームの回数</h2>
+    <p>
+        これから「投資ゲーム」をひよりと一緒に<span class="font_heavy">15回</span>行います。
+        その15回のうち、<span class="font_heavy">最初の10回</span>でひよりの性格を予想し、
+        11回目からの5回のゲームで、
+        <span class="font_heavy">あなたにとって高い得点</span>になるよう選択してください。
+        あなたが望むような配分にするには、ひよりの選び方・表情などから、
+        <span class="font_heavy">ひよりの性格を予想し、</span>
+        ひよりがどちらを選ぶのか考える必要があります。
+    </p>
+
+    <p>
+        また、10回目までと、11回目以降で、ひよりの性格は変わりません。
+        最初の10回のゲームから予想して、11回目からのゲームにそなえてください。
+    </p>
+
+    <h2>確認問題</h2>
+    <p>
+        説明内容の確認問題です。以下の質問にお答えください。
+    </p>
+    <p>
+        <span class="font_heavy">わからなくなった、疑問があった</span>
+        ということがあれば、
+        このページの先頭に戻って説明を確認してください。
+    </p>
+
+    <p>
+        あなたが「投資ゲーム」を一緒に行うAI「ひより」は、
+        とある性格を持っています。
+        <span class="font_heavy">ひよりの性格は、15回のゲームの中で変わりますか？</span>
+    </p>
+    変わる　OR　変わらない
+
+    <p>
+        15回のゲームのうち、
+        <span class="font_heavy">最初から何回</span>のゲームで
+        ひよりの性格を<span class="font_heavy">予想する</span>必要がありますか？
+    </p>
+    6回　OR　8回　OR　10回　OR　12回　OR　14回
+
+</div>
+<br><br>
+
+<div>
+    <h1>このゲームには追加ボーナスのチャンスがあります</h1>
+    <p>
+        この実験では、通常の報酬のほかに、追加ボーナスとして
+        <span class="font_heavy">「amazonギフト券3000円分」</span>
+        がもらえるチャンスがあります。
+    </p>
+    <p class="move_back">
+        これからあなたは「投資ゲーム」を15回行います。
+        <span class="font_heavy">11回目からの5回分のゲームでの合計ポイント</span>があなたの得点です。
+        この合計得点が上位5％の参加者には、追加ボーナスを付与します。
+        例えば、<span class="font_heavy">100人が参加した場合、上位5人</span>が追加でボーナスを受け取れます。
+        抽選に参加しなくとも、通常の報酬はもらえます。
+        もし、同点の参加者がいた場合には、上位5％となるよう無作為に選びます。
+    </p>
+
+    <p class="move_back">
+        追加ボーナスのチャンスに参加したい方は、
+        下の欄に<span class="font_heavy">連絡先メールアドレス</span>を入力してください。
+        当選された方には、同意書をお送りいたします。そのメールを返送してください。
+        確認後、メールにて<span class="font_heavy">「amazonギフト券3000円分」</span>を配布いたします。
+    </p>
+
+    <p>
+        入力いただいたメールアドレスは、追加ボーナスの配布終了後に削除し、
+        <span class="font_heavy">ほかの目的・用途には一切使用いたしません。</span>
+    </p>
+
+    <p class="move_back">
+        メールアドレス記入欄：
+    </p>
+
+    <p class="move_back">
+        なお、メールアドレスが<span class="font_heavy">入力されていない場合</span>には、
+        追加ボーナスへの参加を棄権されたものといたします。
+    </p>
+
+</div>
+<br><br>
+
+<div>
+    <h1>ゲーム画面</h1>
+    <p>
+        これから行う<span class="font_heavy">投資ゲーム</span>は、下のような画面でプレイします。
+    </p>
+    <div style="text-align: center;">
+        <img src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_5gP4YGCs7yTsg3c" width="80%" height="80%">
+    </div>
+
+    <p>
+        画面の左側には<span class="font_heavy">ひより</span>がいます。
+        ゲーム中のひよりの表情は、高得点を得るヒントになるかもしれません。
+    </p>
+
+    <p>
+        右側には投資ゲームの表があります。
+        <span class="font_heavy font_green">「緑」</span>か<span class="font_heavy font_blue">「青」</span>
+        のボタンを押して、あなたの選ぶプロジェクトを決定してください。
+    </p>
+    <p>
+        <span class="font_heavy">「あなた：　3」</span>と書かれているのが、あなたの獲得する得点です。
+    </p>
+    <p>
+        <span class="font_heavy">「ひより：　3」</span>と書かれているのが、ひよりの獲得する得点です。
+    </p>
+
+    <p class="move_back">
+        あなたが選んでいる間、ひよりもどちらを選ぶか考えています。
+        あなたと、ひよりの2人ともが選ぶプロジェクトを決めると、下の画面になります。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="https://rc1userv5pwvgnvtxbwj.au1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_8cSApK0YfdNlsJU" width="80%" height="80%">
+    </div>
+
+    <p>
+        今回の場合は、
+        あなたが<span class="font_heavy font_blue">青プロジェクト</span>を選び、
+        ひよりは<span class="font_heavy font_blue">緑プロジェクト</span>を選びました。
+        ひよりの表情も変化しています。
+    </p>
+
+    <p>
+        新しく<span class="font_heavy">「次へ」ボタン</span>が表示されるので、
+        結果を確認したら押して、次のゲームへ進んでください。
+    </p>
+
+    <p class="move_back">
+        「投資ゲーム」をこのような画面で行います。
+        ここまでの説明が理解できたら、<span class="font_heavy">右下の矢印ボタン</span>を押してください。
+    </p>
+</div>
+<br><br>
+
+
+<div>
+    <h1>「投資ゲーム」を行いましょう！</h1>
+    <p>
+        これから<span class="font_heavy">「投資ゲーム」</span>を始めます。
+        これまでの説明を思い出しながらプレイしてください。
+    </p>
+    <p>
+        また、<span class="font_heavy">11回目から獲得した合計得点</span>が<span class="font_heavy">あなたの得点</span>です。
+        より高い得点を手に入れるために、<span class="font_heavy">10回目までに</span>「ひより」の性格を予想しましょう。
+    </p>
+
+    <p>
+        準備ができたら、<span class="font_heavy">右下の矢印ボタン</span>を押してください。
+    </p>
+</div>
+<br><br>
+
+
+<div>
+    <h1>ゲームをプレイしていただき、ありがとうございました。</h1>
+
+    <p>
+        今回のAI（ひより）とのゲームから
+        <span class="font_heavy">感じたこと、考えたこと</span>などについて、
+        次のページからの質問にお答えください。
+    </p>
+
+    <p>
+        また、これからの質問には、下のようなスライダーバーを使います。
+        練習として、スライダーバーを一番右まで動かしてみましょう。
+    </p>
+
+    <p>
+        使い方がわかりましたか？一番右まで動かせたら、次のページへ進んでください。
+    </p>
+
+    <p>
+        ひよりはどのくらい協力的でしたか？
+    </p>
+    <br>
+    スライダーバー　0～100
+    利己　→　協力
+    <br>
+
+    <p>
+        ひよりの性格がわかりましたか？
+    </p>
+    <br>
+    わかった　OR　わからなかった
+    <br>
+
+    <p>
+        どんな性格でしたか？
+    </p>
+    <br>
+    協力、
+    非協力、
+    そのほか（自由記述）
+    <br>
+
+    <p>
+        ひよりの表情は、その性格通りの変化をしていたと感じましたか？
+    </p>
+    <br>
+    はい　OR　いいえ　OR　わからない
+    <br>
+
+    <p>
+        最期の11回目では、どのように選びましたか？
+        （予想したこと、考えたことなど）
+    </p>
+    <br>
+    自由記述
+    <br>
+
+    <h1>ひよりとのゲームを思い出してください</h1>
+
+    <p class="move_back">
+        <span class="font_heavy">ひより</span>は、
+        社会全体を大切にするか、
+        ひより自身を大切にするか、
+        どちらだと思いますか？
+    </p>
+    <br>
+    7段階
+    <br>
+
+    <h2 class="move_back"></h2>
+    <p class="move_back">
+        <span class="font_heavy">あなた</span>は、
+        社会全体を大切にするか、
+        あなた自身を大切にするか、
+        どちらだと思いますか？
+    </p>
+    <br>
+    7段階
+    <br>
+
+    <h2 class="move_back"></h2>
+    <p class="move_back">
+        下のスライダーバーを<span class="font_heavy">6</span>になるよう動かしてください。
+    </p>
+
+    <p class="move_back">
+        すべてのスライダーを動かしたら、右下の青い矢印を押して次のページへ進んでください。
+    </p>
+
+</div>
+<br><br>
+
+<div>
+    <h1>ご意見・ご感想</h1>
+    <p>
+        この研究について、ご意見・ご感想などございましたら、
+        ご記入ください。
+    </p>
+    <br>
+    自由記述
+    <br>
+
+    <p>
+        実験・アンケート全体について、評価をおしえてください。
+    </p>
+    <br>
+    ☆5まで
+    <br>
+
+</div>
+<br><br>
+
+<!-- テンプレート -->
+<div>
+    <h1></h1>
+    <p>
+
+    </p>
+</div>
+<br><br>
+
+
+</html>

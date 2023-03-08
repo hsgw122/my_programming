@@ -1,0 +1,954 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* 大枠 */
+body {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* 要素 */
+
+.field {
+  position: relative;
+  float: center;
+  background-color: rgb(206, 245, 255);
+  border-style: dashed;
+  border-width: 1px;
+  border-color: gray;
+
+  width: 750px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.loading {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+
+  border-style: dashed;
+  border-width: 1px;
+  border-color: red;
+  box-sizing: border-box;
+
+  width: 80px;
+  height: 80px;
+}
+
+.load {
+  position: absolute;
+
+  top: 50%;
+  /* 要素の中心を基準点にする */
+  transform: translate(-50%, -50%);
+
+  border-radius: 100%;
+}
+
+.load_small {
+  position: absolute;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 15px;
+  height: 15px;
+
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 100%;
+
+}
+
+.load_middle {
+  position: absolute;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 17px;
+  height: 17px;
+
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+
+}
+
+.load_big {
+  position: absolute;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 25px;
+  height: 25px;
+
+  background-color: rgba(0, 0, 0, 0.24);
+  border-radius: 100%;
+
+}
+
+#load_1 {
+  left: 0%;
+}
+#load_2 {
+  left: 50%;
+}
+#load_3 {
+  left: 100%;
+}
+
+.mt_box {
+  position: relative;
+  left: 1%;
+  top: 10%;
+
+  /*
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+  */  
+ 
+  box-sizing: border-box; 
+
+  /* button_zoneとそろえること */
+  width: 56%;
+  height: 40%;
+
+}
+
+.sub_box {
+  /*
+  position: absolute;
+  */
+  float: left;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+
+  width: 47%;
+  height: 47%;
+
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #c21313;
+  border-radius: 20%;
+
+  box-sizing: border-box;
+
+}
+
+.state_box {
+  float: left;
+
+  width: 48%;
+  height: 98%;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 10%;  
+
+  background-color: rgb(211, 211, 211);
+
+  box-sizing: border-box;
+
+  font-size: 2px;
+  text-align: right;
+
+}
+
+.circle {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+
+  width: 100px;
+  height: 100px;
+
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(255, 0, 0, 0.377);
+  border-radius: 10%;
+
+  box-sizing: border-box;
+}
+
+.circle1 {
+
+  top: 25%;
+  left: 12.5%;
+
+}
+
+.circle2 {
+
+  top: 78%;
+  left: 12.5%;
+
+}
+
+.circle3 {
+
+  top: 25%;
+  left: 62.5%;
+
+}
+
+.circle4 {
+
+  top: 78%;
+  left: 62.5%;
+
+}
+
+.self_box {
+  background-color: rgb(255, 196, 196);
+}
+
+.deer_img {
+  width: 50px;
+  
+
+  float: left;
+
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+.rabbit_img {
+  width: 30px;
+  
+
+  float: left;
+
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+.other_box {
+  float: right;
+  margin-right: 1%;
+  
+}
+
+.button_zone {
+  position: relative;
+  /*
+  left: 1%;
+  */
+  top: 15%;
+
+  /* mt_boxとそろえること */
+  /*width: 55%;*/
+  height: 10%;
+
+  box-sizing: border-box;
+
+  /*
+  border-style: solid;
+  border-width: 1px;
+  border-color: violet;
+  */
+  
+
+}
+
+.ch_button {
+
+  background-color: white;
+
+  margin-left: 5%;
+  margin-right: 5%;
+
+  width: 40%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  font-size: 30px;
+
+  box-shadow: 0px 5px 5px rgba(19, 16, 16, 0.29);
+  transition: .3s;
+
+}
+
+.ch_button:active {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+
+  color: rgb(87, 87, 87);
+}
+
+.C_button {
+  color: white;
+  background-image: linear-gradient(45deg, #ff7070 0%, #ff0000 100%);
+
+}
+
+.D_button {
+  color: white;
+  background-image: linear-gradient(45deg, #7057ff 0%, #1900ff 100%);
+
+}
+
+.score_object {
+  
+  float: left;
+  /*
+  position: relative;
+  */
+  
+  top: 50px;
+
+  border-radius: 100%;
+  color: black;
+  background-color: white;
+
+  margin-left: 2px;
+  margin-top: 2px;
+
+  text-align: center;
+
+}
+
+.coin_1 {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 174, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
+  font-size: 15px;
+}
+
+.coin_5 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 238, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
+  font-size: 25px;
+}
+
+.coin_10 {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(255, 232, 131);
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
+  font-size: 40px;
+}
+
+.score_zone {
+  position: absolute;
+
+  width: 43%;
+  height: 25%;
+
+  box-sizing: border-box;
+
+  /*
+  border-style: solid;
+  border-width: 1px;;
+  border-radius: 10px;
+  border-color: gray;
+  */
+
+  color: white;
+  font-size: 20px;
+}
+
+.cpu_score_zone {
+  /* cpuのスコア、場所を決める */
+  right: 1%;
+  top: 1%;
+
+}
+
+.player_score_zone {
+  /* playerのスコア、場所を決める */
+  left: 1%;
+  bottom: 1%;
+
+}
+
+.score {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+
+  box-sizing: border-box;
+
+  border-style: solid;
+  border-width: 1px;;
+  border-radius: 10px;
+  border-color: gray;
+
+  color: white;
+  font-size: 20px;
+
+}
+
+.cpu_score {
+
+  right: 2%;
+  top: 40px;
+
+  text-align: right;
+  
+}
+
+.player_score {
+
+  left: 2%;
+  bottom: 40px;
+
+  text-align: right;
+  
+}
+
+.name {
+  /*
+  position: absolute;
+  */
+
+  color: white;
+  font-size: 30px;
+  background-color: tomato;
+  border-radius: 10%;
+
+  width: 180px;
+  height: 40px;
+  text-align: center;
+
+}
+
+.cpu_name {
+  position: absolute;
+  
+  right: 0%;
+  top: 1%;
+  
+  background-color: gray;
+  color: white;
+}
+
+.player_name {
+  position: absolute;
+
+  left: 0%;
+  bottom: 1%;
+  background-color: red;
+  color: white;
+}
+
+
+.avatar {
+
+  position: absolute;
+
+  right: 8%;
+
+  width: 20%;
+  height: 50%;
+
+  border-style: solid;
+  border-width: 3px;
+  border-color: teal;
+  background-color: teal;
+  border-radius: 30%;
+
+  font-size: 20px;
+  text-align: center;
+
+  transition: .5s;
+  transform: 50%;
+
+}
+
+
+
+/*
+.C_button, .D_button {
+  /*
+  display: inline-block;
+  */
+  /* 縦、横サイズ */
+  /*
+  height: 80%;
+  width: 49%;
+  */
+  /*padding: auto 15%;*/
+  /* どれくらいまるくするか */
+  /*
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 40px;
+  */
+  /*
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+  */
+  /*
+  box-shadow: 0px 5px 5px rgba(19, 16, 16, 0.29);
+
+  transition: .4s;
+
+  margin-top: 10px;
+  
+}
+*/
+
+.get {
+  background-color: aquamarine;
+}
+
+.A_button {
+  
+  position: absolute;
+  /*
+  position: relative;
+  */
+  left: 30px;
+  top: 30px;
+
+  width: 30px;
+  height: 20px;
+}
+
+.B_button {
+  /*
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  */
+  margin-left: 100px;
+  margin-top: 10px;
+
+  width: 30px;
+  height: 20px;
+}
+
+#Time {
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+
+#box {
+  position: absolute;
+
+  border-style: solid;
+  border-width: 3px;
+  border-color: green;
+  border-radius: 100%;
+
+  box-sizing: border-box;
+
+  left: 100px;
+  top: 100px;
+
+  width: 300px;
+  height: 50px;
+
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: auto;
+
+}
+
+#textX {
+  position: absolute;
+  left: 200px;
+  top: 10px;
+
+  font-size: 20px;
+  font-style: italic;
+}
+
+#textY {
+  position: absolute;
+  left: 400px;
+  top: 10px;
+
+  font-size: 20px;
+  font-style: italic;
+}
+
+.char2 {
+  font-size: 100px;
+}
+
+
+/* 見出し ここから */
+h1 {
+    height: auto;
+    margin: 40px 0 0 20px;
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 0;
+    line-height: 1.5;
+}
+ 
+h2 {
+  margin: 60px 0 35px 0;
+  padding: 0 0 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  border-color: #0f5296;
+}
+ 
+h3 {
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+/* ここまで */
+
+/*
+.field {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: green;
+  box-sizing: border-box;
+  
+  height: 350px;
+  width: 700px;
+
+  //margin: 0 auto;
+
+}
+*/
+
+.top {
+  float: left;
+  box-sizing: border-box;
+  /*border: solid 1px red;*/
+  height: 100%;
+  width: 100%;
+}
+
+.chara_image {
+  float: left;
+  box-sizing: border-box;
+  border: solid 1px blue;
+  height: 100%;
+  width: 40%;
+
+  background-image: url(../images/blue_fire.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+
+.game {
+  float: left;
+  box-sizing: border-box;
+  /*border: solid 1px blue;*/
+  height: 100%;
+  width: 60%;
+}
+
+.cd {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 100%;
+  width: 10%;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.C_en,.D_en {
+  float: left;
+  box-sizing: border-box;
+
+  height: 30%;
+  width: 100%;
+
+  margin-top: 1px;
+  margin-left: 1px;
+
+  
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
+}
+
+.C_en {
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+}
+
+.D_en {
+  background-image: linear-gradient(45deg, #4513b8 0%, #972fec 100%);;
+}
+
+.choice {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 100%;
+  width: 90%;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.matrix {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 60%;
+  width: 100%;
+}
+
+.MT_source {
+  float: left;
+  box-sizing: border-box;
+  height: 50%;
+  width: 50%;
+  border: solid 2px black;
+}
+
+.player, .enemy {
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+  width: 50%;
+  
+  text-align: center;
+  vertical-align: middle;
+  
+  font-size: 40px;
+
+  background-color: rgb(154, 241, 158);
+
+}
+
+.enemy {
+  background-color: rgb(236, 183, 224);
+
+}
+
+.bottom {
+  float: left;
+  box-sizing: border-box;
+  border: solid 1px red;
+  height: 100px;
+  width: 100%;
+}
+
+.RPE {
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+  width: 30%;
+}
+
+.tab {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px gray;
+  height: 33%;
+  width: 100%;
+}
+
+.table_RPE {
+  /*float: left;*/
+  border: solid 1px black;
+
+  height: 99%;
+  width: 10px;
+  /*table-layout: 100px;*/
+  overflow-x: scroll;
+
+  text-align: center;
+}
+
+.round {
+  background-color: cadetblue;
+  color: white;
+
+  width: 100px;
+  table-layout: 100px;
+
+}
+
+.ch {
+  background-color: gray;
+  color: white;
+
+  width: 100px;
+  table-layout: 100px;
+
+}
+
+
+/* ここまでが現在のスタイル */
+
+#matrix, .boxMatrix, .boxResult, .boxC, .boxD, .boxCC, .boxDD, .boxCD, .boxDC, .boxN ,.boxUp , .boxK, .boxPlayer, .boxEnemy{
+  border: solid 4px;
+  border-color: white;
+  box-sizing: border-box;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* 
+.box1 {
+  float: center;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+ */
+
+#matrix {
+  float: left;
+  border-color: black;
+  height: auto;
+  width: auto;
+}
+
+.boxMatrix {
+  float: left;
+  border-color: red;
+  height: auto;
+  width: auto;
+}
+
+.boxResult {
+  float: right;
+  border-color: blue; 
+  height: auto;
+  width: auto;
+
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.boxK {
+  float: left;
+  border-color: white;
+  width: 33%;
+}
+
+.boxUp {
+  float: left;
+  border-color: blue;
+  width: 66%;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.boxN, .boxC, .boxD, .boxCC, .boxCD, .boxDC, .boxDD {
+  float: left;
+  border-color: purple;
+  width: 33%;
+}
+
+.boxN {
+  border-color: gray;
+
+}
+
+.boxC {
+  border-color: rgb(255, 87, 87);
+
+}
+
+.boxD {
+  border-color: rgb(130, 210, 236);
+
+}
+
+.boxPlayer, .boxEnemy {
+  float: left;
+  border-color: purple;
+  width: 50%;
+
+  line-height: 50px;
+  font-size: 30px;
+}
+
+
+/* アコーディオン ここから */
+dl {
+  width: 350px;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  font-size: 10px;
+}
+dl:first-child {
+  margin-top:10px;
+}
+dt {
+  position:relative;
+  display: block;
+  padding: 20px 0 20px 20px;
+  background-color: #333333;
+}
+dt:after {
+  content: "＞";
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: rotate(90deg);
+}
+dt.close:after {
+  content: "＜";
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: rotate(-270deg);
+}
+dd {
+  display: none;
+  padding: 20px 0 20px 40px;
+  color: #000;
+}
+/* ここまで */

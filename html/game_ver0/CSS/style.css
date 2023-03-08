@@ -1,0 +1,217 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* 大枠 */
+body {
+  width: 100%;
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto 0 20px;
+}
+
+ 
+/* 見出し ここから */
+h1 {
+    height: auto;
+    margin: 40px 0 0 20px;
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 0;
+    line-height: 1.5;
+}
+ 
+h2 {
+  margin: 60px 0 35px 0;
+  padding: 0 0 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  border-color: #0f5296;
+}
+ 
+h3 {
+    padding-bottom: 10px;
+  font-size: 22px;
+    font-weight: bold;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+/* ここまで */
+
+.matrix, .boxMatrix, .boxResult, .boxC, .boxD, .boxCC, .boxDD, .boxCD, .boxDC, .boxN ,.boxUp , .boxK, .boxPlayer, .boxEnemy{
+  border: solid 4px;
+  border-color: white;
+  box-sizing: border-box;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* 
+.box1 {
+  float: center;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+ */
+
+.matrix {
+  float: left;
+  border-color: black;
+  height: auto;
+  width: auto;
+}
+
+.boxMatrix {
+  float: left;
+  border-color: red;
+  height: auto;
+  width: auto;
+}
+
+.boxResult {
+  float: right;
+  border-color: blue; 
+  height: auto;
+  width: auto;
+
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.boxK {
+  float: left;
+  border-color: white;
+  width: 33%;
+}
+
+.boxUp {
+  float: left;
+  border-color: blue;
+  width: 66%;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.boxN, .boxC, .boxD, .boxCC, .boxCD, .boxDC, .boxDD {
+  float: left;
+  border-color: purple;
+  width: 33%;
+}
+
+.boxN {
+  border-color: gray;
+
+}
+
+.boxC {
+  border-color: rgb(255, 87, 87);
+
+}
+
+.boxD {
+  border-color: rgb(130, 210, 236);
+
+}
+
+.boxPlayer, .boxEnemy {
+  float: left;
+  border-color: purple;
+  width: 50%;
+
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.C_button, .D_button {
+  display: inline-block;
+  /* 縦、横サイズ */
+  padding: 20px 15%;
+  /* どれくらいまるくするか */
+  border-radius: 10px;
+  text-decoration: none;
+  /*
+  color: rgb(255, 255, 255);
+  */
+  font-size: 40px;
+
+  /*
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+  */
+  box-shadow: 0px 5px 5px rgba(19, 16, 16, 0.29);
+
+  transition: .4s;
+
+  margin-top: 10px;
+}
+
+.C_button {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+}
+
+.D_button {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(45deg, #4513b8 0%, #972fec 100%);
+}
+
+.C_button:active, .D_button:active {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+
+
+/* アコーディオン ここから */
+dl {
+  width: 350px;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  font-size: 10px;
+}
+dl:first-child {
+  margin-top:10px;
+}
+dt {
+  position:relative;
+  display: block;
+  padding: 20px 0 20px 20px;
+  background-color: #333333;
+}
+dt:after {
+  content: "＞";
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: rotate(90deg);
+}
+dt.close:after {
+  content: "＜";
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: rotate(-270deg);
+}
+dd {
+  display: none;
+  padding: 20px 0 20px 40px;
+  color: #000;
+}
+/* ここまで */

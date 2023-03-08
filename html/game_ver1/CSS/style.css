@@ -1,0 +1,404 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* 大枠 */
+body {
+  width: 100%;
+  background-color: rgb(238, 255, 244);
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ 
+/* 見出し ここから */
+h1 {
+    height: auto;
+    margin: 40px 0 0 20px;
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 0;
+    line-height: 1.5;
+}
+ 
+h2 {
+  margin: 60px 0 35px 0;
+  padding: 0 0 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  border-color: #0f5296;
+}
+ 
+h3 {
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+/* ここまで */
+
+.field {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: green;
+  box-sizing: border-box;
+  
+  height: 350px;
+  width: 700px;
+
+  /*margin: 0 auto;*/
+
+}
+
+.top {
+  float: left;
+  box-sizing: border-box;
+  /*border: solid 1px red;*/
+  height: 100%;
+  width: 100%;
+}
+
+.chara_image {
+  float: left;
+  box-sizing: border-box;
+  border: solid 1px blue;
+  height: 100%;
+  width: 40%;
+
+  background-image: url(../images/blue_fire.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+
+.game {
+  float: left;
+  box-sizing: border-box;
+  /*border: solid 1px blue;*/
+  height: 100%;
+  width: 60%;
+}
+
+.cd {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 100%;
+  width: 10%;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.C_en,.D_en {
+  float: left;
+  box-sizing: border-box;
+
+  height: 30%;
+  width: 100%;
+
+  margin-top: 1px;
+  margin-left: 1px;
+
+  
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
+}
+
+.C_en {
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+}
+
+.D_en {
+  background-image: linear-gradient(45deg, #4513b8 0%, #972fec 100%);;
+}
+
+.choice {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 100%;
+  width: 90%;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.matrix {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 60%;
+  width: 100%;
+}
+
+.MT_source {
+  float: left;
+  box-sizing: border-box;
+  height: 50%;
+  width: 50%;
+  border: solid 2px black;
+}
+
+.player, .enemy {
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+  width: 50%;
+  
+  text-align: center;
+  vertical-align: middle;
+  
+  font-size: 40px;
+
+  background-color: rgb(154, 241, 158);
+
+}
+
+.enemy {
+  background-color: rgb(236, 183, 224);
+
+}
+
+.button_zone {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px aqua;
+  height: 40%;
+  width: 100%;
+}
+
+.C_button, .D_button {
+  display: inline-block;
+  /* 縦、横サイズ */
+  height: 80%;
+  width: 49%;
+  /*padding: auto 15%;*/
+  /* どれくらいまるくするか */
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 40px;
+  /*
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+  */
+  box-shadow: 0px 5px 5px rgba(19, 16, 16, 0.29);
+
+  transition: .4s;
+
+  margin-top: 10px;
+}
+
+.C_button {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(45deg, #c21313 0%, #ff4800 100%);
+}
+
+.D_button {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(45deg, #4513b8 0%, #972fec 100%);
+}
+
+.C_button:active, .D_button:active {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+
+.bottom {
+  float: left;
+  box-sizing: border-box;
+  border: solid 1px red;
+  height: 100px;
+  width: 100%;
+}
+
+.RPE {
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+  width: 30%;
+}
+
+.tab {
+  float: left;
+  box-sizing: border-box;
+  border: dashed 1px gray;
+  height: 33%;
+  width: 100%;
+}
+
+.table_RPE {
+  /*float: left;*/
+  border: solid 1px black;
+
+  height: 99%;
+  width: 10px;
+  /*table-layout: 100px;*/
+  overflow-x: scroll;
+
+  text-align: center;
+}
+
+.round {
+  background-color: cadetblue;
+  color: white;
+
+  width: 100px;
+  table-layout: 100px;
+
+}
+
+.ch {
+  background-color: gray;
+  color: white;
+
+  width: 100px;
+  table-layout: 100px;
+
+}
+
+
+/* ここまでが現在のスタイル */
+
+#matrix, .boxMatrix, .boxResult, .boxC, .boxD, .boxCC, .boxDD, .boxCD, .boxDC, .boxN ,.boxUp , .boxK, .boxPlayer, .boxEnemy{
+  border: solid 4px;
+  border-color: white;
+  box-sizing: border-box;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* 
+.box1 {
+  float: center;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+ */
+
+#matrix {
+  float: left;
+  border-color: black;
+  height: auto;
+  width: auto;
+}
+
+.boxMatrix {
+  float: left;
+  border-color: red;
+  height: auto;
+  width: auto;
+}
+
+.boxResult {
+  float: right;
+  border-color: blue; 
+  height: auto;
+  width: auto;
+
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.boxK {
+  float: left;
+  border-color: white;
+  width: 33%;
+}
+
+.boxUp {
+  float: left;
+  border-color: blue;
+  width: 66%;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.boxN, .boxC, .boxD, .boxCC, .boxCD, .boxDC, .boxDD {
+  float: left;
+  border-color: purple;
+  width: 33%;
+}
+
+.boxN {
+  border-color: gray;
+
+}
+
+.boxC {
+  border-color: rgb(255, 87, 87);
+
+}
+
+.boxD {
+  border-color: rgb(130, 210, 236);
+
+}
+
+.boxPlayer, .boxEnemy {
+  float: left;
+  border-color: purple;
+  width: 50%;
+
+  line-height: 50px;
+  font-size: 30px;
+}
+
+
+/* アコーディオン ここから */
+dl {
+  width: 350px;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  font-size: 10px;
+}
+dl:first-child {
+  margin-top:10px;
+}
+dt {
+  position:relative;
+  display: block;
+  padding: 20px 0 20px 20px;
+  background-color: #333333;
+}
+dt:after {
+  content: "＞";
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: rotate(90deg);
+}
+dt.close:after {
+  content: "＜";
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: rotate(-270deg);
+}
+dd {
+  display: none;
+  padding: 20px 0 20px 40px;
+  color: #000;
+}
+/* ここまで */
