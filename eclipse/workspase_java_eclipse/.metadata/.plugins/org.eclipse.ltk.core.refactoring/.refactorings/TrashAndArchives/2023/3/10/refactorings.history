@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TrashAndArchives.java&apos; to &apos;TrashSoft_2/src/programCase&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;TrashAndArchives&apos;&#x0D;&#x0A;- 宛先要素: &apos;TrashSoft_2/src/programCase&apos;&#x0D;&#x0A;- オリジナル要素: &apos;programCase.TrashAndArchives.java&apos;" description="コンパイル単位をコピー" destination="=TrashSoft_2/src&lt;programCase" element1="/src&lt;programCase{TrashAndArchives.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1678271190701" units="1" version="1.0"/>
+</session>

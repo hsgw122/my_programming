@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+    <category expanded="true" name="カテゴリーなし">
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DropAndListFileName"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="JFileChooserTest5"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PaintApp"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShootingGame"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="TrashAndArchives"/>
+    </category>
+</runner>
